@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 0 10px;
+
+    background-size: cover;
+    background-position: center center;
+}
+.wrapper{
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    
+}
+
+.chat-area{
+  border-radius: 4%;
+    
+}
+
+.header-chat{
+  color: white;
+}
+
+
+.wrapper .chat-area{
+  background-color: #ff0044;
+}
+
+.bordauser .detalhes{
+    color: white;
+}
+
+/* Login & Signup Form CSS Start */
+
+.registrar{
+    padding: 25px 30px;
+}
+
+.registrar header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.registrar form{
+    margin: 20px 0;
+}
+
+.registrar form .error-txt{
+    color: #712c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+
+.registrar form .nome-detalhes{
+    display: flex;
+}
+
+form .nome-detalhes .campo:first-child{
+    margin-right: 10px;
+}
+form .nome-detalhes .campo:last-child{
+    margin-left: 10px;
+}
+
+.registrar form .campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+.registrar form .campo label{
+    margin-bottom: 2px;
+}
+
+.registrar form .campo input{
+    outline: none;
+}
+.registrar form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.registrar form .imagem input{
+    font-size: 17px;
+}
+
+.registrar form .submit input{
+    margin-right: 13px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    background: #f50243;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registrar form .submit input:hover{
+    background: #f8f5f5;
+    color: red;
+    background-image:url(/imagens/pngtree-heart-8bit-icon-png-image_467300.jpg);
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50px;
+    margin-right: 13px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registrar .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.registrar .link a{
+    color: #333;
+}
+
+.registrar .link a:hover{
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.registrar form .campo i{
+    position: absolute;
+    right: 15px;
+    color: #ccc;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.registrar form .campo i.active::before{
+    content: "\f070";
+    color: #333;
+}
+
+footer {
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f50243;
+    border-top: 5px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+
+.usuarios{
+    padding: 25px 30px;
+}
+
+.usuarios header,
+.lista-usuarios a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.wrapper img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+:is(.usuarios, .lista-usuarios) .conteudo{
+    display: flex;
+    align-items: center;
+}
+
+:is(.usuarios, .lista-usuarios) .detalhes{
+    margin-left: 15px;
+    color: #000;
+}
+
+.usuarios header .conteudo img{
+    height: 50px;
+    width: 50px;
+}
+
+:is(.usuarios, .lista-usuarios) .detalhes span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.usuarios header .logout{
+    background: #f50243;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 17px;
+    border-radius: 5px 0 0 5px;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.usuarios header .logout:hover{
+    background: #f8f5f5;
+    color: red;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.usuarios .search{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+   
+}
+
+.usuarios .search .text{
+    font-size: 18px;
+}
+
+.usuarios .search button:active{
+    background: #333;
+}
+
+
+.usuarios .search button.active i::before{
+    content: "\f00d";
+}
+
+.usuarios .search button{
+    position: relative;
+    margin: 14px;
+    z-index: 1;
+    width: 45px;
+    height: 42px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    color: #333;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.2s ease;
+    background: #f50243;
+    color: #fff;
+    border-radius: 20%;
+}
+
+#spantext{
+    font-size: 15px;
+}
+
+.usuarios .search input{
+    position: absolute;
+    height: 44px;
+    width: calc(100% - 50px);
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    font-size: 16px;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+ 
+.usuarios .search input.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.usuarios .search button:hover{
+    background: #f8f5f5;
+    color: #f50243;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    width: 45px;
+}
+
+
+.lista-usuarios{
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+:is(.lista-usuarios, .chat-box)::-webkit-scrollbar{
+    width: 0px;
+}
+
+.lista-usuarios a{
+    padding: right 15px;
+    margin-bottom: 15px;
+    page-break-after: 10px;
+    border-bottom-color: #f1f1f1;
+}
+
+.lista-usuarios a:last-child{
+    border: none;
+    margin-bottom: 0px;
+     
+}
+
+.lista-usuarios a .conteudo img {
+    height: 40px;
+    width: 40px;
+}
+
+.lista-usuarios a .conteudo p{
+    color: #67676a;
+
+}
+
+.lista-usuarios a .status-dot{
+    font-size: 12px;
+    color: #0aa304;
+}
+
+/*nome de classe para usar no php que vai exibir usuarios offline*/
+.lista-usuarios a .status-dot.offline{
+    color: #ccc;
+}
+
+.chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+
+.chat-area header img{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+
+.chat-area header .back-icon{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.chat-area header span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.chat-box{
+    overflow-y: auto;
+    height: 600px;
+    background: #f7f7f7;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+                inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+
+.chat-box .saida{
+    display: flex;
+}
+
+.saida .detalhes{
+    margin-left: auto;
+    max-width: calc(100% - 50px);
+}
+
+.entrada .detalhes p{
+  background:white;
+  color: black;
+  border-radius: 18px 18px 0 18px;
+}
+
+.saida .detalhes p{
+    background: #f50243;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+}
+
+.chat-box .chat{
+    margin: 15px 0; 
+}
+
+.chat-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                0 16px 16px -16px rgb(0 0 0 / 10%)
+}
+
+.chat-box .entrada img{
+    height: 35px;
+    width: 35px;
+}
+
+.chat-box .entrada{
+    display: flex;
+    align-items: flex-end;
+}
+
+.entrada .detalhes p{
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+}
+
+.chat-area header{
+  border-radius: 10%;
+}
+
+.entrada .detalhes{
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 50px); 
+}
+
+.campo-msg{
+  border-radius: 200px;
+  display: flex;
+}
+
+.chat-area .campo-msg{
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    background: #f50243;
+
+}
+
+
+.campo-msg input{
+    height: 40px;
+    width: calc(100% - 2px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 8px;
+    border-radius: 15px 5px 15px 5px;
+    outline: none;
+}
+
+.campo-msg button{
+    width: 20px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background: #f50243;
+    color: #fff3f3;
+    font-size: 28px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+.campo-msg button:hover{
+    color: #f8f5f5;
+}
