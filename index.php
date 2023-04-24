@@ -30,7 +30,7 @@ console.log("[PWA Builder] Service worker has been registered for scope: " + reg
 
     <div class="wrapper">
       <section class="registrar">
-        <header>Couple WebApp Chat <span style="font-size: 24px; color: red;">&#x2764;</span></header>
+        <header>PWA web chat<span style="font-size: 24px; color: red;">&#x2764;</span></header>
         <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
           <div class="error-txt"></div>
           <div class="nome-detalhes">
