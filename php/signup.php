@@ -9,7 +9,7 @@
         if(filter_var($email, FILTER_VALIDATE_EMAIL)){
             $sql = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");
             if(mysqli_num_rows($sql) > 0){
-                echo "$email - This email already exist!";
+                echo "$email - Email já existe!";
             }else{
                 if(isset($_FILES['image'])){
                     $img_name = $_FILES['image']['name'];
